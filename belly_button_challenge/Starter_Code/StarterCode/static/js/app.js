@@ -36,7 +36,7 @@ let layout1 = {
     title: ""
 };
 
-Plotly.newPlot("bar", [trace1], layout1);
+Plotly.newPlot("bar", trace1, layout1);
 
 //create bubble chart
 let trace2 ={
@@ -62,7 +62,7 @@ let layout2 = {
     
 };
 
-Plotly.newPlot("bubble", [trace2], layout2);
+Plotly.newPlot("bubble", trace2, layout2);
 
 };
 
@@ -83,7 +83,7 @@ function createMenu(names){
 function changeSubject(subjectId){
     console.log(subjectId);
     let metadata1 = globalData[0].metadata.find(item => item.id == subjectId);
-    //console.log("Metadata for seledted id:", metadata1);
+    //console.log("Metadata for selected id:", metadata1);
     console.log("Selected subject ID:", subjectId);
 
     //display metadata for test subject id
