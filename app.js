@@ -23,7 +23,7 @@ function createPlot(data){
     let sample1 = samples[0].sample_values.slice(0,10);
     //console.log(sample1);
 
-    createMenu(names)
+    createMenu(names);
 
 //create bar chart
  let trace1 ={
