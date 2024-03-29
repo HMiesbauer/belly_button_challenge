@@ -2,7 +2,11 @@ let globalData = [];
 
 //use d3 to get file
 d3.json("https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json")
-.then(data => createPlot(data));
+.then(data => {createPlot(data);
+ })
+.catch(error => {
+    console.error('can't fetch data:', error);
+});
 
 
 //function to create plot
