@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bellybutton Biodiversity</title>
-  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.6.2/papaparse.min.js"></script>
+</head>
+  
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -25,8 +27,7 @@
         <div class="card card-body bg-light">
           <h6>Test Subject ID No.:</h6>
           <select id="selDataset" onchange="changeSubject(this.value)">
-          <!-- <option value="books">Books</option-->
-          </select>
+         </select>
 
         </div>
         <div class="card card-primary">
@@ -37,7 +38,7 @@
         </div>
       </div>
       <div class="col-md-8">
-        <div id="bar"></div>
+        <div id="bar" class="js-plotly-plot"></div>
       </div>
       <div class="col-md-5">
         <div id="gauge"></div>
@@ -51,7 +52,7 @@
     </div>
   </div>
 
-  <script src="./app.js"></script>
+  <script src="app.js"></script>
   <!-- <script src="./static/js/bonus.js"></script> -->
 
 </body>
